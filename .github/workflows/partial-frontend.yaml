@@ -1,7 +1,10 @@
 name: Frontend / E2E
 
 on:
-  workflow_call:
+  schedule:
+    - cron: '00 0 * * *'
+  push:
+    branches: [ "beta" ]
 
 jobs:
   lint:
