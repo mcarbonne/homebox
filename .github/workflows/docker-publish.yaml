@@ -4,25 +4,7 @@ on:
   schedule:
     - cron: '00 0 * * *'
   push:
-    branches: [ "main" ]
-    paths:
-      - 'backend/**'
-      - 'frontend/**'
-      - 'Dockerfile'
-      - 'Dockerfile.rootless'
-      - '.dockerignore'
-      - '.github/workflows'
-    # Publish semver tags as releases.
-    tags: [ 'v*.*.*' ]
-  pull_request:
-    branches: [ "main" ]
-    paths:
-      - 'backend/**'
-      - 'frontend/**'
-      - 'Dockerfile'
-      - 'Dockerfile.rootless'
-      - '.dockerignore'
-      - '.github/workflows'
+    branches: [ "beta" ]
 
 env:
   # Use docker.io for Docker Hub if empty
